@@ -1,0 +1,49 @@
+﻿mobile todo
+http://stackoverflow.com/questions/7534888/embed-google-maps-on-page-without-overriding-iphone-scroll-behavior
+
+
+
+
+amplex todo
+- seo, titles, etc
+- 404 error page
+- add caching by page, problem with prices in the cache output, maybe no caching if they are logged int
+
+- ppmi selector on cat parts settings doesn't populate alternates if correctly prepopulated
+- add images to parts catalog
+- do not use, in fields for part import
+- caching search results for cat parts?
+todo
+
+copy code to projectz, where templated grouped page list groups can be empty or whatever
+
+subpage
+ie 7 / safari / chrome, etc compat
+ordering of featured items menu
+preloading over images
+setup featured item page
+search to work with title, description
+set up on dev
+disable left featured item button
+
+sorting not behaving well for admin for template modules
+
+
+vpn
+173.221.186.86 (not aboutamplex.com)
+user:  Jerry.W
+original password:  @mplexVpn -- ORIGINAL PASSWORD, USED IN LP2P SETUP
+password:  p@$$WORD
+domain: AMPLEX.LOCAL
+
+server
+server: 192.168.0.11
+login: AMPLEX\Jerry.W
+
+-- domain? AMPLEX.LOCAL
+
+Sage Business Works
+user: JERRY
+password: amplex
+user: MANAGER, password: p@$$WORD
+

@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BasicMaster.Master.cs" Inherits="sites.amplex.masters.BasicMaster" %>
+<%@ Register Src="~/sites/amplex/_controls/header.ascx" TagPrefix="uc" TagName="header" %>
+<%@ Register Src="~/sites/amplex/_controls/footer.ascx" TagPrefix="uc" TagName="footer" %>
+<%@ Register Src="~/scms/modules/ticker/controls/ticker.ascx" TagPrefix="uc" TagName="ticker" %>
+<%@ Register Src="~/sites/amplex/_controls/globalScript.ascx" TagPrefix="uc" TagName="globalScript" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head id="head" runat="server">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Amplex</title>
+	<%-- <link href='http://fonts.googleapis.com/css?family=Alegreya+SC' rel='stylesheet' type='text/css'/> --%>
+	<link rel="Stylesheet" type="text/css" href="/sites/amplex/_css/base.css" />
+	<script type="text/javascript" src="/sites/amplex/_js/jquery-1.8.2.min.js"></script>
+	<script src="/sites/amplex/_js/jquery.cycle.all.js" type="text/javascript"></script>
+	<uc:globalScript ID="GlobalScript1" runat="server" />
+	<script src="/sites/amplex/_js/jquery.ov.js" type="text/javascript"></script>
+	<script src="/sites/amplex/_js/jquery.xmenu.js" type="text/javascript"></script>
+	<script src="/scms/modules/ticker/js/jquery.ticker.js" type="text/javascript"></script>
+  <link rel="Stylesheet" type="text/css" href="/sites/amplex/_css/featured-items.css" /> 
+  <link rel="Stylesheet" type="text/css" href="/sites/amplex/_css/pov.css" />
+  
+  <script src="/sites/amplex/_js/init.js" type="text/javascript"></script>	
+
+	<asp:ContentPlaceHolder ID="head_placeholder" runat="server">
+	</asp:ContentPlaceHolder>
+
+</head>
+<body id="body" runat="server" class="full">
+	<form id="form1" runat="server">
+  
+		<div class="header">
+			
+			<div class="header-inner">
+				<uc:header ID="header" runat="server" />
+				<uc:ticker id="ticker" runat="server" />
+				<div class="content-upper">
+				
+					<div class="cta left">
+						<p><a href="/contact/become-a-customer"><img class="ov" src="/sites/amplex/images/cta-becomecustomer-small.jpg" width="165" height="62" /></a></p>
+						<p><a href="/contact/become-a-vendor"><img class="ov" src="/sites/amplex/images/cta-becomevendor-small.jpg" width="165" height="62" /></a></p>
+						<p><a href="/featured-items"><img class="ov" src="/sites/amplex/images/cta-featuredproducts-small.jpg" width="165" height="62" /></a></p>
+						<p><a href="/about"><img class="ov" src="/sites/amplex/images/cta-whatisamplex-small.jpg" width="165" height="62" /></a></p>
+					</div>
+		          
+		      <div id="pov-wrap">
+						<div id="pov" class="slideshow right">
+							<asp:ContentPlaceHolder ID="slide_placeholder" runat="server"></asp:ContentPlaceHolder>
+						</div>  
+			      
+						<div id="pov-buttons">
+							<a href="#"><div id="pov-one" class="pov-button"></div></a>
+							<a href="#"><div id="pov-two" class="pov-button"></div></a>
+							<a href="#"><div id="pov-three" class="pov-button"></div></a>
+							<a href="#"><div id="pov-four" class="pov-button"></div></a>
+							<a href="#"><div id="pov-five" class="pov-button"></div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="hp-content">
+			<div class="content-main extended">
+				<div class="left">
+					<h2>News & Events</h2>
+					<asp:PlaceHolder ID="subnav_placeholder" runat="server"></asp:PlaceHolder>
+				</div>
+				<div class="slider right">
+					<h2 style="margin-left:25px;padding-bottom:18px;">Featured Items</h2>
+					<img class='featured-left-button ov' src='/sites/amplex/images/featured-left.png' />
+					<asp:ContentPlaceHolder ID="body_placeholder" runat="server"></asp:ContentPlaceHolder>
+					<img class='featured-right-button ov' src='/sites/amplex/images/featured-right.png' />				
+				</div>
+			</div>
+		</div>
+
+		<uc:footer ID="footer" runat="server" />
+        
+  </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

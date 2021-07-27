@@ -1,0 +1,80 @@
+﻿.request-a-quote
+{
+	padding-left:10px;
+	margin-bottom:50px;
+	position:relative;
+}
+
+.request-a-quote h2
+{
+	clear:both;
+	padding-top:20px;
+	margin-left:-10px;
+	margin-bottom:20px;
+	border-bottom:solid 1px #7BA600;
+}
+
+
+.request-a-quote .raq-row
+{
+	display:inline;
+	float:left;
+	padding-right:20px;
+	margin-bottom:14px;
+}
+
+
+.request-a-quote .raq-label
+{
+	font-weight:bold;
+	font-size: 14px;
+	padding-bottom:4px;
+}
+
+.request-a-quote .raq-value input
+{
+	width: 270px;
+}
+
+.request-a-quote .form-field-name
+{
+	
+}
+
+.request-a-quote .raq-summary-validation
+{
+	clear:both;
+	border: solid 1px #e4c74b;
+	color: #e4c74b;
+	background-color: #fefddd;
+	position:relative;
+	width:610px;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:10px;
+}
+
+.request-a-quote .raq-summary-validation ul
+{
+	list-style-type:none;
+	margin:0;
+	margin-top:10px;
+	padding:0;
+	
+}
+
+.request-a-quote .raq-summary-validation li
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+
+.request-a-quote .form-submit
+{
+	clear:both;
+}
+
+
+

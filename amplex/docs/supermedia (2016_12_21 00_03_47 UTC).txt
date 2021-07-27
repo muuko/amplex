@@ -1,0 +1,37 @@
+﻿Network Solutions login info - REGISTRAR
+User ID: aboutamplex
+Password: Amplex01
+Account #: 5787540 (I’m not sure if you need this)
+
+
+www.supermedia.com - DNS SERVERS + email hosting
+877-557-9696
+877-988-3775 - SUPPORT!
+Email: tami@aboutamplex.com
+Password: amplex4546
+
+Then at the Website OS login -- URL IS MESSED UP, buttons not working on that page, type it in directly:
+https://hosting.mysuperpageshosting.com/OS4/index.php
+Domain: aboutamplex.com
+Password: tami123  
+- click 'Website Management'
+- choose on menu 'DNS Manager'
+- edit zone file
+
+old records
+-BLANK-, IN A, 64.29.145.73
+www, IN A, 64.29.145.73
+ftp, IN A, 64.29.145.73
+m, IN CNAME, lb.goMobi.info.
+
+new records
+-BLANK-, IN A, 96.31.33.37
+www, IN A, 96.31.33.37
+ftp, IN A, 96.31.33.37
+m, IN A, 96.31.33.37
+
+
+-- new static records
+199.233.254.24
+
+

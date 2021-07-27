@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amplex", "amplex\amplex.csproj", "{31E5F0D1-1C4B-4312-959E-EC6AB1BF80EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "scms", "..\projectz\scms\scms.csproj", "{6230778B-C72D-4241-BCEC-0E09ED6C4C94}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccLocalPath0 = .
+		CanCheckoutShared = true
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31E5F0D1-1C4B-4312-959E-EC6AB1BF80EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E5F0D1-1C4B-4312-959E-EC6AB1BF80EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E5F0D1-1C4B-4312-959E-EC6AB1BF80EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E5F0D1-1C4B-4312-959E-EC6AB1BF80EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6230778B-C72D-4241-BCEC-0E09ED6C4C94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6230778B-C72D-4241-BCEC-0E09ED6C4C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6230778B-C72D-4241-BCEC-0E09ED6C4C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6230778B-C72D-4241-BCEC-0E09ED6C4C94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

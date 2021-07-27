@@ -1,0 +1,7 @@
+C:\projects\amplex\cmdSageExport\bin\Release\cmdSageExport.exe
+C:\projects\amplex\cmdSageExport\bin\Release\cmdSageExport.pdb
+C:\projects\amplex\cmdSageExport\bin\Release\SageExportLib.dll
+C:\projects\amplex\cmdSageExport\bin\Release\SageExportLib.pdb
+C:\projects\amplex\cmdSageExport\obj\Release\ResolveAssemblyReference.cache
+C:\projects\amplex\cmdSageExport\obj\Release\cmdSageExport.exe
+C:\projects\amplex\cmdSageExport\obj\Release\cmdSageExport.pdb

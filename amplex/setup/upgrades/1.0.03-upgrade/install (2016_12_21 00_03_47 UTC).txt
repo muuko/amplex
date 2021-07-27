@@ -1,0 +1,9 @@
+﻿1 - web.config
+1.a <httpHandlers>
+       <remove verb="GET,HEAD" path="*.ashx"/>
+      <add verb="GET,HEAD" path="*.ashx" validate="false" type="scms.handlers.Image"/>
+1.b <handlers>
+      <remove name="ScmsThumbnail"/>
+      <add name="ScmsThumbnail" verb="GET,HEAD" path="*.ashx" type="scms.handlers.Image"/>
+
+2 - run db scripts in order

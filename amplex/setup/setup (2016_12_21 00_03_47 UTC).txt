@@ -1,0 +1,3 @@
+﻿- generate machine key, put in <system.web>
+http://aspnetresources.com/tools/machineKey
+http://jagbarcelo.blogspot.com/2009/08/solution-padding-invalid-cannot-be.html

@@ -1,0 +1,32 @@
+﻿release 1.0.1, added ProductCategoryDesc1 - 5, to support product type and size
+
+
+
+excel example
+-dsn=SageTest -compress=true -log=true -parts="[ICPart$]" -prices="[ICPartPrice$]" -url="http://localhost/scms/modules/parts/classes/Parts.ashx" -pause=true -timeout=60
+
+test example
+-dsn=SageTest -compress=true -log=true -parts="[ICPart$]" -prices="[ICPartPrice$]" 
+
+live
+-dsn=AMPLEX_ODBC -user=MANAGER -password= -compress=true -log=true -parts="ICPart"
+
+raw
+-dsn=AMPLEX_ODBC_RAW -user= -password= -compress=true -log=true -parts="[ICPart$]"  -url="http://localhost/scms/modules/parts/classes/Parts.ashx" -pause=true -timeout=300 
+
+
+- staging
+-dsn=AMPLEX_ODBC_RAW -user= -password= -compress=true -log=true -parts="[ICPart$]"  -url="http://amplex.dev.coinbug.com/scms/modules/parts/classes/Parts.ashx" -pause=true -timeout=1800 -max=10000
+
+-- da
+-dsn=AMPLEX_ODBC_RAW -user= -password= -compress=true -log=true -parts="[ICPart$]"  -url="http://amplexda.dev.coinbug.com/scms/modules/parts/classes/Parts.ashx" -pause=true -timeout=1800 -max=10000
+
+-- local
+-dsn=AMPLEX_ODBC_RAW -user= -password= -compress=true -log=true -parts="[ICPart$]"  -url="http://localhost/scms/modules/parts/classes/Parts.ashx" -pause=true -timeout=1800 -max=10000
+
+
+
+
+-- production batch file:
+cmdSageExport.exe -dsn=AMPLEX_ODBC -user=MANAGER -password=MCKNIGHT -compress=true -log=true -parts="ICPart" -url="http://amplexdadev.web713.discountasp.net/scms/modules/parts/classes/parts.ashx" -timeout=1800 -max=10000 >export.%date:~-4%%date:~4,2%%date:~7,2%.%time::=%.log 2>&1
+exit 0

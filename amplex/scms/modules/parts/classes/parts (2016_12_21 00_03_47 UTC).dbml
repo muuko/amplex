@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="amplex" Class="partsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=laptop2\sqlexpress;Initial Catalog=amplex;User ID=amplex_user" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="amplexConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.cat_settings" Member="cat_settings">
+    <Type Name="cat_setting">
+      <Column Name="siteId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="searchResultsPageId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="searchResultsPageModuleInstanceId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.cat_size" Member="cat_sizes">
+    <Type Name="cat_size">
+      <Column Name="id" Type="System.String" DbType="NVarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="ordinal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="cat_size_cat_part" Member="cat_parts" ThisKey="id" OtherKey="sage_ProductCategoryDesc2" Type="cat_part" />
+    </Type>
+  </Table>
+  <Table Name="dbo.cat_part" Member="cat_parts">
+    <Type Name="cat_part" Id="ID1">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sage_SKICPart" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sage_price" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="sage_ID" Type="System.String" DbType="VarChar(21)" CanBeNull="true" />
+      <Column Name="sage_Description1" Type="System.String" DbType="VarChar(29)" CanBeNull="true" />
+      <Column Name="sage_Description2" Type="System.String" DbType="VarChar(29)" CanBeNull="true" />
+      <Column Name="sage_Description3" Type="System.String" DbType="VarChar(29)" CanBeNull="true" />
+      <Column Name="sage_LongDescription" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="hash" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="lastUpdated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="imageUrl" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="pageId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="instanceId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sage_ProductCategoryDesc1" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="sage_ProductCategoryDesc2" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="sage_ProductCategoryDesc3" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="sage_ProductCategoryDesc4" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="sage_ProductCategoryDesc5" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Association Name="cat_size_cat_part" Member="cat_size" ThisKey="sage_ProductCategoryDesc2" OtherKey="id" Type="cat_size" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.cat_part_search" Method="cat_part_search">
+    <Parameter Name="searchText" Type="System.String" DbType="NVarChar(128)" />
+    <Parameter Name="searchInDescription1" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="searchInDescription2" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="searchInDescription3" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="searchInLongDescription" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="orderBy" Type="System.String" DbType="NVarChar(32)" />
+    <Parameter Name="powerSearch" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="pageSize" Type="System.Int32" DbType="Int" />
+    <Parameter Name="pageNumber" Type="System.Int32" DbType="Int" />
+    <Parameter Name="count" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType IdRef="ID1" />
+  </Function>
+</Database>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="amplex" EntityNamespace="scms.modules.ticker" ContextNamespace="scms.modules.ticker" Class="tickerDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=laptop2\sqlexpress;Initial Catalog=amplex;User ID=amplex_user" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="amplexConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ticker_entry" Member="ticker_entries">
+    <Type Name="ticker_entry">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="label" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="value" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="pageId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ordinal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="url" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

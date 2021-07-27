@@ -1,0 +1,8 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartArguments>-dsn=AMPLEX_ODBC_RAW -user= -password= -compress=true -log=true -parts="[ICPart$]"  -url="http://localhost/scms/modules/parts/classes/Parts.ashx" -pause=true -timeout=1800 -max=100000</StartArguments>
+  </PropertyGroup>
+</Project>

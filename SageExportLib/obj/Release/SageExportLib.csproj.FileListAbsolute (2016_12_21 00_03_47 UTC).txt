@@ -1,0 +1,5 @@
+C:\projects\amplex\SageExportLib\bin\Release\SageExportLib.dll
+C:\projects\amplex\SageExportLib\bin\Release\SageExportLib.pdb
+C:\projects\amplex\SageExportLib\obj\Release\ResolveAssemblyReference.cache
+C:\projects\amplex\SageExportLib\obj\Release\SageExportLib.dll
+C:\projects\amplex\SageExportLib\obj\Release\SageExportLib.pdb

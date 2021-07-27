@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SubpageMaster.Master.cs" Inherits="sites.mobile.masters.SubpageMaster" EnableViewState="false" %>
+<%@ Register Assembly="amplex" Namespace="scms.controls" TagPrefix="cc" %>
+<%@ Register Src="~/sites/mobile/_controls/header.ascx" TagPrefix="uc" TagName="header" %>
+<%@ Register Src="~/sites/mobile/_controls/footer.ascx" TagPrefix="uc" TagName="footer" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="head" runat="server">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<title></title>
+		
+	<link rel="stylesheet" href="/sites/mobile/_themes/amplex/amplex.css" />
+	<link rel="stylesheet" href="/sites/mobile/_css/jquery.mobile.structure-1.2.0.min.css" />
+	<script src="/sites/mobile/_js/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="/sites/mobile/_js/jquery.mobile-1.2.0.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/sites/mobile/_css/styles.css" />
+		
+	<script type="text/javascript">
+
+		$(document).on('pageinit', function() {
+			console.log("pageinit event");
+		});
+
+
+		$(document).bind("mobileinit", function() {
+			console.log("mobileinit event");
+
+		});
+
+		$(document).ready(function() {
+			console.log("ready");
+		});
+	</script>
+	
+
+</head>
+<body>
+	<form id="form" runat="server" >
+		
+		<cc:jqmPage ID="jqmPage" runat="server" >
+			<uc:header ID="header" runat="server" />
+				
+			<div class="content-wrap" data-role="content">
+				<asp:ContentPlaceHolder ID="body" runat="server"></asp:ContentPlaceHolder>
+			</div>
+			
+			<div data-role="footer" data-theme="c">
+				<uc:footer ID="ucFooter" runat="server" />
+			</div>
+    </cc:jqmPage>
+	</form>
+</body>
+</html>

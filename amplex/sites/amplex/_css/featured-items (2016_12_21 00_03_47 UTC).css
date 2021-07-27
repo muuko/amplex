@@ -1,0 +1,107 @@
+﻿.featured-items
+{
+    display:inline;
+    float:left;
+    width:698px;
+    height:241px;
+}
+
+.featured-left-button 
+{
+    display:inline;
+    float:left;
+    width:25px;
+    height:241px;
+}
+
+.featured-right-button
+{
+    display:inline;
+    float:left;
+    height:241px;
+    width:25px;
+}
+
+.featured-item-group
+{
+
+}
+
+.featured-item
+{
+	position:relative;
+    display:inline;
+    float:left;
+    
+    height:241px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width:161px;
+    background: url( '/sites/amplex/images/featured-item.png');
+}
+
+.featured-item h2
+{
+    font-size:12px;
+    line-height: 14px;
+    padding:0;
+    margin:0;
+    margin-bottom:8px;
+}
+
+.featured-item a
+{
+    
+}
+
+.featured-item .fi-description
+{
+    text-align:left;
+    padding:0 12px;
+    margin-top:10px;
+    font-size:11px;
+    line-height: 14px;
+    height: 60px;
+    overflow:hidden;
+}
+
+.featured-item .fi-more-information
+{
+	font-size:11px;
+	position: absolute;
+	top: 215px;
+	left: 26px;
+}
+
+.featured-item-separator
+{
+    display:inline;
+    float:left;
+    background:url('/sites/amplex/images/featured-separator.png');
+    width:18px;
+    height:241px;
+}
+
+a.fi-image
+{
+	display:block;
+	margin-top:12px;
+}
+
+.fi-title
+{
+	margin-top: 8px;
+}
+.fi-title a
+{
+	text-decoration: none;
+	/* color: #2A2521; */
+}
+
+
+.fi-image img
+{
+	padding: 1px;
+	border: solid 1px #777;
+}

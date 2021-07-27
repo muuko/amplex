@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="scms.admin.Admin" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <script src="/sites/amplex/_js/jquery-1.4.2.min.js" type="text/javascript" language="javascript"></script>
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link type="text/css" href="/scms/admin/scmsadmin.css" rel="Stylesheet" />
+</head>
+
+<body>
+	<form id="form1" runat="server">
+		<div id="wrap">
+  
+    <asp:ScriptManager id="scriptManager" runat="server"></asp:ScriptManager>
+			
+				<div id="leftColumn">
+					<div class="subnav">
+						<ul>
+							<li><a id="anchorPages" runat="server" href="/scms/admin/pages.aspx">pages</a></li>
+							<li><a id="anchorTemplates" runat="server" href="/scms/admin/templates.aspx">templates</a></li>
+							<li><a id="anchorMasters" runat="server" href="/scms/admin/masters.aspx">masters</a></li>
+							<li><a id="anchorFiles" runat="server" href="/scms/admin/files.aspx">files</a></li>
+							<li><a id="anchorSites" runat="server" href="/scms/admin/sites.aspx">sites</a></li>
+							<li><a id="anchorPlugins" runat="server" href="/scms/admin/plugins.aspx">plugins</a></li>
+							<li><a id="anchorSecurity" runat="server" href="/scms/admin/security.aspx">security</a></li>
+							<li><a id="anchorSettings" runat="server" href="/scms/admin/settings.aspx">settings</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div id="mainColumn" class="admin-content">
+					<div id="title"  ><h1><asp:Literal ID="literalTitle" runat="server"></asp:Literal></h1></div>
+					<div id="login" >
+					    <asp:LoginView ID="loginView" runat="server">
+					        <LoggedInTemplate>
+					            Welcome <asp:LoginName CssClass="login-name" runat="server" />&nbsp;|
+					            <asp:LoginStatus  runat="server" LogoutAction="Redirect" LogoutPageUrl="/" LogoutText="Logout" />&nbsp;|
+					            <a href="/scms/admin/change-password.aspx">Change Password</a>
+					        </LoggedInTemplate>
+					    </asp:LoginView>
+					    
+					</div>
+					<div style="clear:both;">
+					    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+					    </asp:ContentPlaceHolder>
+					</div>
+				</div>
+				
+				<div id="footer"></div>
+    
+	    </div>
+	    
+    </form>
+</body>
+</html>

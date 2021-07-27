@@ -1,0 +1,10 @@
+﻿forms changes
+1 - add horz / vert for radio button / checkbox lists, +columns, +layout
+2 - add redact in email for fields 
+3 - add required html override
+4 - increase size of default value, useful for literal values
+
+/scms/modules/forms/form/controls/editfield.ascx, *
+/scms/modules/forms/form/view.ascx, *
+
+updated dll

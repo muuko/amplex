@@ -1,0 +1,16 @@
+﻿.submission-voting
+{
+    background-color:#fff;
+    width:400px;
+    min-height:200px;
+    height:200px;
+    
+}
+
+.submission-voting-updownbutton
+{
+    background-color:#fff;
+    margin-right:15px;
+    display:inline;
+    float:left;
+}

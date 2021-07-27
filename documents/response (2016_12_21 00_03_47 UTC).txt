@@ -1,0 +1,51 @@
+Thanks for all the input.  My comments below with a *
+
+I've corrected Parker's title.
+
+> I spoke with Tami on Friday for quite a while.   Over all she is happy with the way things look.  She doesn't want to change anything on the slide show as far as the text.  She likes the amount of text and the link to Learn More.  We know that Customer Service does not have a learn more button, but she said that was fine.  She did not want to add one, there are plenty of other ways for them to get contact info or a sales quote, etc.  
+*OK.  thanks for reviewing.
+
+>But we do have a few questions/changes:
+
+>  Can the 5 dots on the slide show in the right bottom corner, be made darker?  Unless you scroll over them, you don't know they are there, so you don't know that you can forward to another slide.
+
+*I've updated the active dots to a textured dot with dark and light colors so it won't be hidden in dark or light backgrounds.  Does this look ok?  
+*I've also changed the settings so that the dots are always visible, even if you don't hover -- Is this ok, or should I change it back to being hidden until you hover?
+
+ 
+-- Tami mentioned slowing down the slideshow a little bit.  She felt like she did not have enough time to read everything.
+*I've updated the slideshow to slide every 12 seconds (instead of 8 seconds as it was set).  How's that?
+
+
+-- Can we somehow have a link to the pricelist on the Variety & Selection tab in the About column?  ( we like that all of the titles on the slide show to have a link to something related to it)
+*I've added a sentence and a link to the plant catalog.  Please review and let me know if you would prefer other text.
+
+
+-- If you click on freight under Delivery on the slideshow, it goes to a error page.
+* nice catch, I've now corrected the link
+ 
+
+--  In the column at the top that is labeled Products, we only want the price list.  Can you take off trees & groundcover?
+* I've removed the trees and groundcover.  I've also changed the main products page to automatically redirect to the Plant Catalog.  You can add other pages to this section in the future -- I'll show you how to add pages when we have some time.
+ 
+
+-- Thanks for adding Parker.
+*Of course, sorry about missing the title.  he's good now.
+ 
+--  We need to correct Barbara's last name, it should be  Noguet.
+*updated
+ 
+
+--  I will get a picture of Tami to you ASAP, we may change the picture of George again.
+*k
+ 
+
+-- On the bottom line of the ticker,can whatever we put in there be linked to something.  Liek if we put Mants Trade show, could a customer click on it, and we have the link to the MANTS website?  And since the top row is going to be Featured Items, if they click on it, will it take them to the picture and info below?
+* Right now, all the links are to internal pages, I'll update the code so you link to an external page.
+ 
+
+--  If you click on a slide show pic, it takes you to that subject under the column About.  If you look it is home>About>Customer Service.   Tami does not like that Home is not capatalized.  Is that fixable?
+* yes, I've update the breadcrumbs to display 'Home' capitalized.
+ 
+
+So I guess that for now, there are only minor changes.  

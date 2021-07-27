@@ -1,0 +1,7 @@
+﻿- pageselector
+- pagesettings
+
+- modify page admin for new code supporting associated Dates
+- add pagelist module control/cs code
+- add page list styling to css
+- add pager module

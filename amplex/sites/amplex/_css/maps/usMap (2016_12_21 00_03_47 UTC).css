@@ -1,0 +1,35 @@
+﻿#divMapWrap
+{
+	margin-bottom:60px;
+}
+	
+#imgMap
+{
+	height: 532px;
+	width: 851px;
+	
+}
+	
+#divRegion
+{
+	display:none;
+	position:absolute;
+	background-color: #ecffb2;
+	border: dashed 1px #004400;
+	width: 250px;
+	height:83px;
+	height:auto;
+	min-height:83px;
+	left: 50px;
+	top: 50px;
+	z-index:40;
+	padding: 10px 10px 10px 10px;
+}
+	
+#divRegion h2
+{
+	margin-top:0;
+	padding-top:0;
+	text-align:center;
+	color:#004400;
+}

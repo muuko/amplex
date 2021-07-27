@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmdSageExport", "cmdSageExport\cmdSageExport.csproj", "{28492F12-252E-43D2-B239-666324E5767A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SageExportLib", "SageExportLib\SageExportLib.csproj", "{2388F73B-899A-499D-B55C-A58EB8F29E78}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SageExportSetup", "SageExportSetup\SageExportSetup.vdproj", "{EA5DEDAD-47E6-470C-94CB-75112FF6BA78}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccLocalPath0 = .
+		CanCheckoutShared = true
+		SccProjectUniqueName1 = cmdSageExport\\cmdSageExport.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection1 = cmdSageExport\\
+		SccProjectUniqueName2 = SageExportLib\\SageExportLib.csproj
+		SccLocalPath2 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection2 = SageExportLib\\
+		SccProjectUniqueName3 = SageExportSetup\\SageExportSetup.vdproj
+		SccLocalPath3 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection3 = SageExportSetup\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28492F12-252E-43D2-B239-666324E5767A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28492F12-252E-43D2-B239-666324E5767A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28492F12-252E-43D2-B239-666324E5767A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28492F12-252E-43D2-B239-666324E5767A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2388F73B-899A-499D-B55C-A58EB8F29E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2388F73B-899A-499D-B55C-A58EB8F29E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2388F73B-899A-499D-B55C-A58EB8F29E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2388F73B-899A-499D-B55C-A58EB8F29E78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA5DEDAD-47E6-470C-94CB-75112FF6BA78}.Debug|Any CPU.ActiveCfg = Debug
+		{EA5DEDAD-47E6-470C-94CB-75112FF6BA78}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

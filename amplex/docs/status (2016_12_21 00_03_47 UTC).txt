@@ -1,0 +1,10 @@
+﻿1.1.1 11/26/2012
+add part size admin
+
+1.1, 11/19/2012 
+add part sizes
+
+
+??? not pushed,
+-fix for ordering modules via admin up/down (in .cs)
+- more page / module ordinal fixes from projectz

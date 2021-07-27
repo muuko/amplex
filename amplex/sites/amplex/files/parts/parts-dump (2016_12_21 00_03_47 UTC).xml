@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<root>
+  <ICParts>
+    <ICPart SKICPart="6" ID="ONE" Hash="FFpxHzoP4i1HjwF7iiKigPW0mmMLCfsQtKTejMQYw8g=" Price="14.25">
+      <Description1>desc for one</Description1>
+      <Description2>thisll be description2 for 1</Description2>
+      <Description3>bot name for one</Description3>
+      <LongDescription>long desc for one</LongDescription>
+    </ICPart>
+    <ICPart SKICPart="9" ID="TWO" Hash="YMNV3jgIaNetPKFPbl+JK+0PFxo5aBw244CIpvhiaIU=" Price="">
+      <Description1>roses</Description1>
+      <Description2>lorem ipsum</Description2>
+      <Description3 />
+      <LongDescription>long desc for two</LongDescription>
+    </ICPart>
+    <ICPart SKICPart="14" ID="THREE" Hash="ceTucwr8rQ+WozBePpHE2jvnznge7KCDvog20RlhdOg=" Price="61">
+      <Description1>Comfortroot</Description1>
+      <Description2>Hibiscus aculeatus</Description2>
+      <Description3 />
+      <LongDescription>varius, sapien et cursus consequat, turpis purus tristique libero, vitae gravida arcu nisi ut metus. Pellentesque viverra, massa vel euismod placerat, lectus augue aliquam nunc, vitae adipiscing lectus mauris quis massa. Nullam accumsan congue dictum. Cras ultrices auctor vestibulum. Aenean non ante id turpis tincidunt tempor. Donec cursus, justo vehicula consequat consectetur, erat felis bibendum erat, sed vulputate elit lacus at est. Maecenas bibendum fringilla orci, ac condimentum nunc fringilla at. Phasellus porta quam eget ligula pretium lacinia</LongDescription>
+    </ICPart>
+  </ICParts>
+</root>

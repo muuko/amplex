@@ -1,0 +1,1763 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{31E5F0D1-1C4B-4312-959E-EC6AB1BF80EF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>amplex</RootNamespace>
+    <AssemblyName>amplex</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30930.28736, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL" />
+    <Reference Include="FiftyOne.Foundation, Version=2.1.12.2, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Recaptcha, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="scms, Version=1.0.36.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scms\admin\controls\AdminBreadcrumbs.ascx" />
+    <Content Include="scms\admin\controls\AdminPagesBreadcrumbs.ascx" />
+    <Content Include="scms\admin\controls\PageList.ascx" />
+    <Content Include="scms\admin\controls\PageSelector.ascx" />
+    <Content Include="scms\admin\controls\PageSettings.ascx" />
+    <Content Include="scms\admin\controls\PlaceholderDdl.ascx" />
+    <Content Include="scms\admin\controls\PluginModuleInstances.ascx" />
+    <Content Include="scms\admin\controls\SiteDdl.ascx" />
+    <Content Include="scms\admin\controls\StatusMessage.ascx" />
+    <Content Include="scms\admin\module.aspx" />
+    <Content Include="scms\admin\newmodule.aspx" />
+    <Content Include="scms\admin\pages.aspx" />
+    <Content Include="scms\admin\scmsadmin.css" />
+    <Content Include="scms\admin\template.aspx" />
+    <Content Include="scms\admin\templates.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="scms\admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\change-password.aspx.cs">
+      <DependentUpon>change-password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\change-password.aspx.designer.cs">
+      <DependentUpon>change-password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\AdminBreadcrumbs.ascx.cs">
+      <DependentUpon>AdminBreadcrumbs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\AdminBreadcrumbs.ascx.designer.cs">
+      <DependentUpon>AdminBreadcrumbs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\AdminPagesBreadcrumbs.ascx.cs">
+      <DependentUpon>AdminPagesBreadcrumbs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\AdminPagesBreadcrumbs.ascx.designer.cs">
+      <DependentUpon>AdminPagesBreadcrumbs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\PageModuleInstanceSelector.ascx.cs">
+      <DependentUpon>PageModuleInstanceSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\PageModuleInstanceSelector.ascx.designer.cs">
+      <DependentUpon>PageModuleInstanceSelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\ModuleSelector.ascx.cs">
+      <DependentUpon>ModuleSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\ModuleSelector.ascx.designer.cs">
+      <DependentUpon>ModuleSelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\OrganizationList.ascx.cs">
+      <DependentUpon>OrganizationList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\OrganizationList.ascx.designer.cs">
+      <DependentUpon>OrganizationList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\UserList.ascx.cs">
+      <DependentUpon>UserList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\UserList.ascx.designer.cs">
+      <DependentUpon>UserList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\PageList.ascx.cs">
+      <DependentUpon>PageList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\PageList.ascx.designer.cs">
+      <DependentUpon>PageList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\PageSelector.ascx.cs">
+      <DependentUpon>PageSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\PageSelector.ascx.designer.cs">
+      <DependentUpon>PageSelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\PageSettings.ascx.cs">
+      <DependentUpon>PageSettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\PageSettings.ascx.designer.cs">
+      <DependentUpon>PageSettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\PlaceholderDdl.ascx.cs">
+      <DependentUpon>PlaceholderDdl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\PlaceholderDdl.ascx.designer.cs">
+      <DependentUpon>PlaceholderDdl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\PluginModuleInstances.ascx.cs">
+      <DependentUpon>PluginModuleInstances.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\PluginModuleInstances.ascx.designer.cs">
+      <DependentUpon>PluginModuleInstances.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\RolesList.ascx.cs">
+      <DependentUpon>RolesList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\RolesList.ascx.designer.cs">
+      <DependentUpon>RolesList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\SelectImage.ascx.cs">
+      <DependentUpon>SelectImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\SelectImage.ascx.designer.cs">
+      <DependentUpon>SelectImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\SiteDdl.ascx.cs">
+      <DependentUpon>SiteDdl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\SiteDdl.ascx.designer.cs">
+      <DependentUpon>SiteDdl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\controls\StatusMessage.ascx.cs">
+      <DependentUpon>StatusMessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\controls\StatusMessage.ascx.designer.cs">
+      <DependentUpon>StatusMessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\organization.aspx.cs">
+      <DependentUpon>organization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\organization.aspx.designer.cs">
+      <DependentUpon>organization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\user.aspx.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\user.aspx.designer.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\security.aspx.cs">
+      <DependentUpon>security.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\security.aspx.designer.cs">
+      <DependentUpon>security.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\pluginsettings.aspx.cs">
+      <DependentUpon>pluginsettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\pluginsettings.aspx.designer.cs">
+      <DependentUpon>pluginsettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\masters.aspx.cs">
+      <DependentUpon>masters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\masters.aspx.designer.cs">
+      <DependentUpon>masters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\files.aspx.cs">
+      <DependentUpon>files.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\files.aspx.designer.cs">
+      <DependentUpon>files.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\module.aspx.cs">
+      <DependentUpon>module.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\module.aspx.designer.cs">
+      <DependentUpon>module.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\newmodule.aspx.cs">
+      <DependentUpon>newmodule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\newmodule.aspx.designer.cs">
+      <DependentUpon>newmodule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\pages.aspx.cs">
+      <DependentUpon>pages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\pages.aspx.designer.cs">
+      <DependentUpon>pages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\plugins.aspx.cs">
+      <DependentUpon>plugins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\plugins.aspx.designer.cs">
+      <DependentUpon>plugins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\sites.aspx.cs">
+      <DependentUpon>sites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\sites.aspx.designer.cs">
+      <DependentUpon>sites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\template.aspx.cs">
+      <DependentUpon>template.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\template.aspx.designer.cs">
+      <DependentUpon>template.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\admin\templates.aspx.cs">
+      <DependentUpon>templates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\admin\templates.aspx.designer.cs">
+      <DependentUpon>templates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\controls\jqmPage.cs" />
+    <Compile Include="scms\controls\Pager.ascx.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\controls\Pager.ascx.designer.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\handlers\Image.ashx.cs">
+      <DependentUpon>Image.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\content\controls\FileManager.ascx.cs">
+      <DependentUpon>FileManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\content\controls\FileManager.ascx.designer.cs">
+      <DependentUpon>FileManager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\content\DownloadFile.aspx.cs">
+      <DependentUpon>DownloadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\content\DownloadFile.aspx.designer.cs">
+      <DependentUpon>DownloadFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\content\select-image.aspx.cs">
+      <DependentUpon>select-image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\content\select-image.aspx.designer.cs">
+      <DependentUpon>select-image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\forms\autoresponder\formsettings.ascx.cs">
+      <DependentUpon>formsettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\forms\autoresponder\formsettings.ascx.designer.cs">
+      <DependentUpon>formsettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\forms\formsApplication.cs" />
+    <Compile Include="scms\modules\forms\formsAutoResponderEventHandler.cs" />
+    <Compile Include="scms\modules\forms\form\controls\editfield.ascx.cs">
+      <DependentUpon>editfield.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\forms\form\controls\editfield.ascx.designer.cs">
+      <DependentUpon>editfield.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\forms\form\controls\editform.ascx.cs">
+      <DependentUpon>editform.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\forms\form\controls\editform.ascx.designer.cs">
+      <DependentUpon>editform.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\forms\form\controls\fields.ascx.cs">
+      <DependentUpon>fields.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\forms\form\controls\fields.ascx.designer.cs">
+      <DependentUpon>fields.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\forms\form\controls\viewEvents.ascx.cs">
+      <DependentUpon>viewEvents.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\forms\form\controls\viewEvents.ascx.designer.cs">
+      <DependentUpon>viewEvents.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\forms\form\controls\viewResponses.ascx.cs">
+      <DependentUpon>viewResponses.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\forms\form\controls\viewResponses.ascx.designer.cs">
+      <DependentUpon>viewResponses.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\forms\form\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\forms\form\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\forms\form\helper.cs" />
+    <Compile Include="scms\modules\forms\form\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\forms\form\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\forms\settings.ascx.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\forms\settings.ascx.designer.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\navigation\breadcrumbs\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\navigation\breadcrumbs\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\navigation\breadcrumbs\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\navigation\breadcrumbs\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\navigation\pagedetail\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\navigation\pagedetail\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\navigation\pagedetail\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\navigation\pagedetail\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\navigation\pagelist\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\navigation\pagelist\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\navigation\pagelist\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\navigation\pagelist\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\navigation\settings.ascx.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\navigation\settings.ascx.designer.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\navigation\sitemap\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\navigation\sitemap\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\navigation\sitemap\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\navigation\sitemap\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\navigation\subnav\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\navigation\subnav\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\navigation\subnav\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\navigation\subnav\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\parts\classes\parts.cs">
+      <DependentUpon>parts.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\parts\classes\partsApplication.cs" />
+    <Compile Include="scms\modules\parts\classes\Parts.ashx.cs">
+      <DependentUpon>Parts.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\parts\classes\parts.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>parts.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\parts\classes\PartsLoader.cs" />
+    <Compile Include="scms\modules\parts\classes\ICPart.cs" />
+    <Compile Include="scms\modules\parts\catalog\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\parts\catalog\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\parts\catalog\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\parts\catalog\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\parts\part\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\parts\part\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\parts\part\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\parts\part\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\parts\settings.ascx.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\parts\settings.ascx.designer.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\parts\sizes.ascx.cs">
+      <DependentUpon>sizes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\parts\sizes.ascx.designer.cs">
+      <DependentUpon>sizes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\parts\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\parts\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\rss\classes\rssProcessor.cs" />
+    <Compile Include="scms\modules\rss\feeds\feeds.ascx.cs">
+      <DependentUpon>feeds.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\rss\feeds\feeds.ascx.designer.cs">
+      <DependentUpon>feeds.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\rss\rssList\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\rss\rssList\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\rss\rssList\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\rss\rssList\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\rss\settings.ascx.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\rss\settings.ascx.designer.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\search\searchresults\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\search\searchresults\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\search\searchresults\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\search\searchresults\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\search\searchinput\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\search\searchinput\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\search\searchinput\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\search\searchinput\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\search\settings.ascx.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\search\settings.ascx.designer.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\security\password\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\security\password\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\security\password\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\security\password\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\security\login\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\security\login\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\security\login\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\security\login\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\security\profile\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\security\profile\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\security\profile\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\security\profile\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\security\register\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\security\register\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\security\register\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\security\register\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\security\settings.ascx.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\security\settings.ascx.designer.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\security\welcome\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\security\welcome\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\security\welcome\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\security\welcome\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\slideshow\slideshow\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\slideshow\slideshow\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\slideshow\slideshow\slide.ascx.cs">
+      <DependentUpon>slide.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\slideshow\slideshow\slide.ascx.designer.cs">
+      <DependentUpon>slide.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\slideshow\slideshow\slides.ascx.cs">
+      <DependentUpon>slides.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\slideshow\slideshow\slides.ascx.designer.cs">
+      <DependentUpon>slides.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\slideshow\slideshow\slideshowSettings.ascx.cs">
+      <DependentUpon>slideshowSettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\slideshow\slideshow\slideshowSettings.ascx.designer.cs">
+      <DependentUpon>slideshowSettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\slideshow\slideshow\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\slideshow\slideshow\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\slideshow\settings.ascx.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\slideshow\settings.ascx.designer.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\special\data\data.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>data.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\special\data\specialDataContext.cs" />
+    <Compile Include="scms\modules\special\special\formsettings.ascx.cs">
+      <DependentUpon>formsettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\special\special\formsettings.ascx.designer.cs">
+      <DependentUpon>formsettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\special\specialApplication.cs" />
+    <Compile Include="scms\modules\special\specialEventHandler.cs" />
+    <Compile Include="scms\modules\submission\controls\editSubmission.ascx.cs">
+      <DependentUpon>editSubmission.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\submission\controls\editSubmission.ascx.designer.cs">
+      <DependentUpon>editSubmission.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\submission\controls\submission.ascx.cs">
+      <DependentUpon>submission.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\submission\controls\submission.ascx.designer.cs">
+      <DependentUpon>submission.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\submission\controls\voting.ascx.cs">
+      <DependentUpon>voting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\submission\controls\voting.ascx.designer.cs">
+      <DependentUpon>voting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\submission\submission\adminedit.aspx.cs">
+      <DependentUpon>adminedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\submission\submission\adminedit.aspx.designer.cs">
+      <DependentUpon>adminedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\submission\submission\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\submission\submission\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\submission\controls\formsettings.ascx.cs">
+      <DependentUpon>formsettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\submission\controls\formsettings.ascx.designer.cs">
+      <DependentUpon>formsettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\submission\submission\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\submission\submission\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\systemevents\settings.ascx.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\systemevents\settings.ascx.designer.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\ticker\classes\ticker.cs">
+      <DependentUpon>ticker.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\ticker\classes\ticker.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ticker.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\ticker\settings.ascx.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\ticker\settings.ascx.designer.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="sites\amplex\_controls\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sites\amplex\_controls\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="sites\amplex\_controls\globalScript.ascx.cs">
+      <DependentUpon>globalScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sites\amplex\_controls\globalScript.ascx.designer.cs">
+      <DependentUpon>globalScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="sites\amplex\_controls\MainNavItem.ascx.cs">
+      <DependentUpon>MainNavItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sites\amplex\_controls\MainNavItem.ascx.designer.cs">
+      <DependentUpon>MainNavItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\ticker\controls\ticker.ascx.cs">
+      <DependentUpon>ticker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\ticker\controls\ticker.ascx.designer.cs">
+      <DependentUpon>ticker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="sites\amplex\_masters\BasicMaster.Master.cs">
+      <DependentUpon>BasicMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sites\amplex\_masters\BasicMaster.Master.designer.cs">
+      <DependentUpon>BasicMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="scms\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\content\controls\edit.ascx.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\content\controls\edit.ascx.designer.cs">
+      <DependentUpon>edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\content\controls\settings.ascx.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\content\controls\settings.ascx.designer.cs">
+      <DependentUpon>settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\modules\content\controls\view.ascx.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\modules\content\controls\view.ascx.designer.cs">
+      <DependentUpon>view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="scms\Page.aspx.cs">
+      <DependentUpon>Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scms\Page.aspx.designer.cs">
+      <DependentUpon>Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sites\amplex\_controls\header.ascx.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sites\amplex\_controls\header.ascx.designer.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="sites\amplex\_controls\mainnav.ascx.cs">
+      <DependentUpon>mainnav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sites\amplex\_controls\mainnav.ascx.designer.cs">
+      <DependentUpon>mainnav.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="sites\amplex\_masters\SubPageWide.Master.cs">
+      <DependentUpon>SubPageWide.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sites\amplex\_masters\SubPageWide.Master.designer.cs">
+      <DependentUpon>SubPageWide.Master</DependentUpon>
+    </Compile>
+    <Compile Include="sites\amplex\_masters\SubPage.Master.cs">
+      <DependentUpon>SubPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sites\amplex\_masters\SubPage.Master.designer.cs">
+      <DependentUpon>SubPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="sites\mobile\_controls\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sites\mobile\_controls\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="sites\mobile\_controls\header.ascx.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sites\mobile\_controls\header.ascx.designer.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="sites\mobile\_masters\BasicMaster.Master.cs">
+      <DependentUpon>BasicMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sites\mobile\_masters\BasicMaster.Master.designer.cs">
+      <DependentUpon>BasicMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="sites\mobile\_masters\SubpageMaster.Master.cs">
+      <DependentUpon>SubpageMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sites\mobile\_masters\SubpageMaster.Master.designer.cs">
+      <DependentUpon>SubpageMaster.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scms\admin\Admin.Master" />
+    <Content Include="scms\client\images\action_delete.gif" />
+    <Content Include="scms\client\images\arrow_down.gif" />
+    <Content Include="scms\client\images\arrow_top.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\langs\en.js" />
+    <Content Include="scms\client\jscript\tiny_mce\license.txt" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advhr\css\advhr.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advhr\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advhr\js\rule.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advhr\rule.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advimage\css\advimage.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advimage\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advimage\image.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advimage\img\sample.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advimage\js\image.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advlink\css\advlink.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advlink\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advlink\js\advlink.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advlink\link.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\autoresize\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\autoresize\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\autosave\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\bbcode\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\directionality\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\emotions.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\js\emotions.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\example\dialog.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\example\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\example\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\example\img\example.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\example\js\dialog.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\example\langs\en.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\example\langs\en_dlg.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\fullpage\css\fullpage.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\fullpage\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\fullpage\fullpage.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\fullpage\js\fullpage.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\iespell\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\inlinepopups\template.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\layer\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\layer\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\media\css\media.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\media\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\media\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\media\js\embed.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\media\js\media.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\media\langs\en_dlg.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\media\media.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\noneditable\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\paste\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\paste\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\paste\js\pastetext.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\paste\js\pasteword.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\paste\langs\en_dlg.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\paste\pastetext.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\paste\pasteword.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\preview\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\preview\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\preview\example.html" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\preview\jscripts\embed.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\preview\preview.html" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\print\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\print\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\save\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\save\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\spellchecker\css\content.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\spellchecker\img\wline.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\style\css\props.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\style\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\style\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\style\js\props.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\style\langs\en_dlg.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\style\props.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\tabfocus\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\tabfocus\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\table\cell.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\table\css\cell.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\table\css\row.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\table\css\table.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\table\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\table\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\table\js\cell.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\table\js\merge_cells.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\table\js\row.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\table\js\table.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\table\langs\en_dlg.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\table\merge_cells.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\table\row.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\table\table.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\template\blank.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\template\css\template.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\template\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\template\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\template\js\template.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\template\langs\en_dlg.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\template\template.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\visualchars\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\wordcount\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\wordcount\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\del.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\about.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\anchor.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\charmap.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\color_picker.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\editor_template.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\editor_template_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\image.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\img\icons.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\js\about.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\js\anchor.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\js\charmap.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\js\color_picker.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\js\image.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\js\link.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\js\source_editor.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\langs\en.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\langs\en_dlg.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\link.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\default\content.css" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\default\dialog.css" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\default\ui.css" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\source_editor.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\simple\editor_template.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\simple\editor_template_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\simple\img\icons.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\simple\langs\en.js" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\simple\skins\default\content.css" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\simple\skins\default\ui.css" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\simple\skins\o2k7\content.css" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\simple\skins\o2k7\img\button_bg.png" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\simple\skins\o2k7\ui.css" />
+    <Content Include="scms\client\jscript\tiny_mce\tiny_mce.js" />
+    <Content Include="scms\client\jscript\tiny_mce\tiny_mce_popup.js" />
+    <Content Include="scms\client\jscript\tiny_mce\tiny_mce_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\utils\editable_selects.js" />
+    <Content Include="scms\client\jscript\tiny_mce\utils\form_utils.js" />
+    <Content Include="scms\client\jscript\tiny_mce\utils\mctabs.js" />
+    <Content Include="scms\client\jscript\tiny_mce\utils\validate.js" />
+    <Content Include="scms\modules\content\controls\edit.ascx" />
+    <Content Include="scms\modules\content\controls\settings.ascx" />
+    <Content Include="scms\modules\content\controls\view.ascx" />
+    <Content Include="scms\Page.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.aspx" />
+    <Content Include="scms\admin\login.aspx" />
+    <Content Include="scms\admin\plugins.aspx" />
+    <Content Include="scms\admin\sites.aspx" />
+    <Content Include="scms\modules\navigation\settings.ascx" />
+    <Content Include="scms\modules\navigation\sitemap\edit.ascx" />
+    <Content Include="scms\modules\navigation\sitemap\view.ascx" />
+    <Content Include="scms\modules\navigation\subnav\edit.ascx" />
+    <Content Include="scms\modules\navigation\subnav\view.ascx" />
+    <Content Include="scms\default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scms\modules\content\controls\FileManager.ascx" />
+    <Content Include="scms\modules\content\select-image.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scms\admin\masters.aspx" />
+    <Content Include="scms\admin\files.aspx" />
+    <Content Include="scms\modules\content\DownloadFile.aspx" />
+    <Content Include="scms\modules\content\images\document.jpg" />
+    <Content Include="scms\modules\navigation\breadcrumbs\edit.ascx" />
+    <Content Include="scms\modules\navigation\breadcrumbs\view.ascx" />
+    <Content Include="sites\amplex\_css\delete-this.styles.css" />
+    <Content Include="sites\amplex\_masters\BasicMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="docs\notes.txt" />
+    <Content Include="lib\AjaxControlToolkit.dll" />
+    <Content Include="lib\Recaptcha.dll" />
+    <Content Include="lib\scms.dll" />
+    <Content Include="scms\admin\pluginsettings.aspx" />
+    <Content Include="scms\admin\Settings.aspx" />
+    <Content Include="scms\modules\forms\form\controls\editfield.ascx" />
+    <Content Include="scms\modules\forms\form\controls\editform.ascx" />
+    <Content Include="scms\modules\forms\form\controls\fields.ascx" />
+    <Content Include="scms\modules\forms\form\controls\viewResponses.ascx" />
+    <Content Include="scms\modules\forms\form\edit.ascx" />
+    <Content Include="scms\modules\forms\form\view.ascx" />
+    <Content Include="scms\modules\forms\samples\crossposttest.html" />
+    <Content Include="scms\modules\forms\samples\internal.html" />
+    <Content Include="scms\modules\forms\settings.ascx" />
+    <Content Include="scms\modules\navigation\pagedetail\edit.ascx" />
+    <Content Include="scms\modules\navigation\pagedetail\view.ascx" />
+    <Content Include="scms\modules\systemevents\settings.ascx" />
+    <Content Include="setup\upgrades\1.0.03-upgrade\install.txt" />
+    <Content Include="sites\amplex\_controls\header.ascx" />
+    <Content Include="sites\amplex\_controls\mainnav.ascx" />
+    <Content Include="sites\amplex\_masters\SubPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="lib\scms.pdb" />
+    <Content Include="scms\admin\change-password.aspx" />
+    <Content Include="scms\admin\controls\ModuleSelector.ascx" />
+    <Content Include="scms\admin\controls\UserList.ascx" />
+    <Content Include="scms\admin\controls\RolesList.ascx" />
+    <Content Include="scms\admin\controls\SelectImage.ascx" />
+    <Content Include="scms\admin\user.aspx" />
+    <Content Include="scms\admin\security.aspx" />
+    <Content Include="scms\client\images\calendar.gif" />
+    <Content Include="scms\client\images\action_delete_disabled.gif" />
+    <Content Include="scms\client\images\image-not-available.jpg" />
+    <Content Include="scms\client\images\action_edit.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advlist\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\advlist\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\autolink\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\autolink\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\autosave\langs\en.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\example_dependency\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\example_dependency\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\legacyoutput\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\legacyoutput\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\lists\editor_plugin.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\lists\editor_plugin_src.js" />
+    <Content Include="scms\client\jscript\tiny_mce\plugins\media\moxieplayer.swf" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\img\flash.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\img\iframe.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\img\pagebreak.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\img\quicktime.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\img\realmedia.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\img\shockwave.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\img\trans.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\img\video.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\img\windowsmedia.gif" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\shortcuts.htm" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\highcontrast\content.css" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\highcontrast\dialog.css" />
+    <Content Include="scms\client\jscript\tiny_mce\themes\advanced\skins\highcontrast\ui.css" />
+    <Content Include="scms\controls\Pager.ascx" />
+    <Content Include="scms\handlers\Image.ashx" />
+    <Content Include="scms\modules\forms\autoresponder\formsettings.ascx" />
+    <Content Include="scms\modules\forms\form\controls\viewEvents.ascx" />
+    <Content Include="scms\modules\navigation\pagelist\edit.ascx" />
+    <Content Include="scms\modules\navigation\pagelist\view.ascx" />
+    <Content Include="scms\modules\search\searchresults\edit.ascx" />
+    <Content Include="scms\modules\search\searchresults\view.ascx" />
+    <Content Include="scms\modules\search\searchinput\edit.ascx" />
+    <Content Include="scms\modules\search\searchinput\view.ascx" />
+    <Content Include="scms\modules\search\settings.ascx" />
+    <Content Include="scms\modules\security\password\edit.ascx" />
+    <Content Include="scms\modules\security\password\view.ascx" />
+    <Content Include="scms\modules\security\login\edit.ascx" />
+    <Content Include="scms\modules\security\login\view.ascx" />
+    <Content Include="scms\modules\security\profile\edit.ascx" />
+    <Content Include="scms\modules\security\profile\view.ascx" />
+    <Content Include="scms\modules\security\register\edit.ascx" />
+    <Content Include="scms\modules\security\register\view.ascx" />
+    <Content Include="scms\modules\security\settings.ascx" />
+    <Content Include="scms\modules\security\welcome\edit.ascx" />
+    <Content Include="scms\modules\security\welcome\view.ascx" />
+    <Content Include="scms\modules\slideshow\slideshow\edit.ascx" />
+    <Content Include="scms\modules\slideshow\slideshow\slide.ascx" />
+    <Content Include="scms\modules\slideshow\slideshow\slides.ascx" />
+    <Content Include="scms\modules\slideshow\slideshow\slideshowSettings.ascx" />
+    <Content Include="scms\modules\slideshow\slideshow\view.ascx" />
+    <Content Include="scms\modules\slideshow\public\js\jquery.cycle.all.min.js" />
+    <Content Include="scms\modules\slideshow\settings.ascx" />
+    <Content Include="scms\modules\special\special\formsettings.ascx" />
+    <Content Include="scms\modules\submission\controls\editSubmission.ascx" />
+    <Content Include="scms\modules\submission\controls\submission.ascx" />
+    <Content Include="scms\modules\submission\controls\voting.ascx" />
+    <Content Include="scms\modules\submission\public\images\down.gif" />
+    <Content Include="scms\modules\submission\public\images\down_ov.gif" />
+    <Content Include="scms\modules\submission\public\images\even.gif" />
+    <Content Include="scms\modules\submission\public\images\up.gif" />
+    <Content Include="scms\modules\submission\public\images\up_ov.gif" />
+    <Content Include="scms\modules\submission\public\js\voting.js" />
+    <Content Include="scms\modules\submission\public\styles.css" />
+    <Content Include="scms\modules\submission\submission\adminedit.aspx" />
+    <Content Include="scms\modules\submission\submission\edit.ascx" />
+    <Content Include="scms\modules\submission\controls\formsettings.ascx" />
+    <Content Include="scms\modules\submission\submission\view.ascx" />
+    <Content Include="setup\setup.txt" />
+    <Content Include="setup\upgrades\1.0.10\install.txt" />
+    <Content Include="setup\upgrades\1.0.16\notes.txt" />
+    <Content Include="setup\upgrades\1.0.17\notes.txt" />
+    <Content Include="sites\amplex\images\about.gif" />
+    <Content Include="sites\amplex\images\about-ov.gif" />
+    <Content Include="sites\amplex\images\contact.gif" />
+    <Content Include="sites\amplex\images\contact_ov.gif" />
+    <Content Include="sites\amplex\images\featured-left.png" />
+    <Content Include="sites\amplex\images\featured-left-ov.png" />
+    <Content Include="sites\amplex\images\featured-right.png" />
+    <Content Include="sites\amplex\images\featured-right-ov.png" />
+    <Content Include="sites\amplex\images\featured-separator.png" />
+    <Content Include="sites\amplex\images\menuitem.png" />
+    <Content Include="sites\amplex\images\menuitem-ov.png" />
+    <Content Include="sites\amplex\images\news.gif" />
+    <Content Include="sites\amplex\images\news-ov.gif" />
+    <Content Include="sites\amplex\images\pov-five.jpg" />
+    <Content Include="sites\amplex\images\pov-four.jpg" />
+    <Content Include="sites\amplex\images\pov-one.jpg" />
+    <Content Include="sites\amplex\images\pov-three.jpg" />
+    <Content Include="sites\amplex\images\pov-two.jpg" />
+    <Content Include="sites\amplex\images\pov_button_five.gif" />
+    <Content Include="sites\amplex\images\pov_button_five.png" />
+    <Content Include="sites\amplex\images\pov_button_five-ov.gif" />
+    <Content Include="sites\amplex\images\pov_button_four.gif" />
+    <Content Include="sites\amplex\images\pov_button_four.png" />
+    <Content Include="sites\amplex\images\pov_button_four-ov.gif" />
+    <Content Include="sites\amplex\images\pov_button_one.gif" />
+    <Content Include="sites\amplex\images\pov_button_one.png" />
+    <Content Include="sites\amplex\images\pov_button_one-ov.gif" />
+    <Content Include="sites\amplex\images\pov_button_one-ov.png" />
+    <Content Include="sites\amplex\images\pov_button_three.gif" />
+    <Content Include="sites\amplex\images\pov_button_three.png" />
+    <Content Include="sites\amplex\images\pov_button_three-ov.gif" />
+    <Content Include="sites\amplex\images\pov_button_three-ov.png" />
+    <Content Include="sites\amplex\images\pov_button_two.gif" />
+    <Content Include="sites\amplex\images\pov_button_two.png" />
+    <Content Include="sites\amplex\images\pov_button_two-ov.gif" />
+    <Content Include="sites\amplex\images\pov_button_two-ov.png" />
+    <Content Include="sites\amplex\images\products.gif" />
+    <Content Include="sites\amplex\images\products_ov.gif" />
+    <Content Include="sites\amplex\images\search.png" />
+    <Content Include="sites\amplex\images\search-ov.png" />
+    <Content Include="sites\amplex\images\specials.gif" />
+    <Content Include="sites\amplex\images\specials-ov.gif" />
+    <Content Include="sites\amplex\_controls\MainNavItem.ascx" />
+    <Content Include="sites\amplex\_css\featured-items.css" />
+    <Content Include="sites\amplex\_js\init.js" />
+    <Content Include="sites\amplex\_js\jcarousellite_1.0.1.min.js" />
+    <Content Include="sites\amplex\_js\jmenu.js" />
+    <Content Include="sites\amplex\_js\jqia2.support.js" />
+    <Content Include="sites\amplex\_js\jquery-1.4.2.min.js" />
+    <Content Include="sites\amplex\_js\jquery.cycle.all.js" />
+    <Content Include="sites\amplex\_js\jquery.ov.js" />
+    <Content Include="robots.txt" />
+    <Content Include="sites\amplex\_js\jquery.xmenu.js" />
+    <None Include="scms\handlers\mimetypes.pdf" />
+    <None Include="scms\modules\special\data\data.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>data.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="setup\1-aspnet_regsql.sql" />
+    <None Include="setup\6- scms_get_users.sql" />
+    <None Include="setup\2-ddl.sql" />
+    <None Include="setup\3-scms_form_submissions_get.sql" />
+    <None Include="setup\4-aspnet_WebEvent_Events_Trim.sql" />
+    <None Include="setup\5-scms_search_searchWord.sql" />
+    <None Include="setup\7 - scms_submissions_get.sql" />
+    <None Include="setup\8 - scms_pages_get.sql" />
+    <None Include="setup\upgrades\1.0.01\1.0.1-upgrade.sql" />
+    <None Include="setup\upgrades\1.0.02\1.0.2-upgrade.sql" />
+    <None Include="setup\upgrades\1.0.03-upgrade\1 - dml.sql" />
+    <None Include="setup\upgrades\1.0.03-upgrade\4-aspnet_WebEvent_Events_Trim.sql" />
+    <None Include="setup\upgrades\1.0.04\1 - upgrade.sql" />
+    <None Include="setup\upgrades\1.0.04\2 - search ignore inserts.sql" />
+    <None Include="setup\upgrades\1.0.04\5-scms_search_searchWord.sql" />
+    <None Include="setup\upgrades\1.0.05\3-scms_form_submissions_get.sql" />
+    <None Include="setup\upgrades\1.0.06\1 -ddl.sql" />
+    <None Include="setup\upgrades\1.0.06\1.1 - dml.sql" />
+    <None Include="setup\upgrades\1.0.06\6 - scms_get_users.sql" />
+    <None Include="setup\upgrades\1.0.07\dml.sql" />
+    <None Include="setup\upgrades\1.0.08\scms_submissions_get.sql" />
+    <None Include="setup\upgrades\1.0.08\update.sql" />
+    <None Include="setup\upgrades\1.0.10\scms_pages_get.sql" />
+    <None Include="setup\upgrades\1.0.10\update.sql" />
+    <None Include="setup\upgrades\amplex\specials.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="scms\modules\parts\classes\parts.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>parts.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="scms\modules\special\data\data.dbml.layout">
+      <DependentUpon>data.dbml</DependentUpon>
+    </None>
+    <None Include="setup\upgrades\1.0.13\updates.sql" />
+    <None Include="setup\upgrades\1.0.14\updates.sql" />
+    <None Include="setup\upgrades\1.0.15\updates.sql" />
+    <None Include="setup\upgrades\1.0.16\updates.sql" />
+    <None Include="setup\upgrades\1.0.17\updates.sql" />
+    <None Include="setup\upgrades\1.0.18\updates.sql" />
+    <None Include="setup\upgrades\1.0.19\updates.sql" />
+    <None Include="setup\upgrades\1.0.20\5-scms_search_searchWord.sql" />
+    <None Include="setup\upgrades\1.0.20\9 - scms_search_clear.sql" />
+    <None Include="setup\upgrades\1.0.20\updates.sql" />
+    <None Include="setup\upgrades\1.0.21\6- scms_get_users.sql" />
+    <None Include="setup\upgrades\1.0.21\updates.sql" />
+    <None Include="setup\upgrades\amplex\pagelist.sql" />
+    <Content Include="scms\admin\controls\OrganizationList.ascx" />
+    <Content Include="scms\admin\organization.aspx" />
+    <Content Include="scms\client\images\action_user.gif" />
+    <Content Include="scms\modules\parts\test.aspx" />
+    <Content Include="sites\amplex\images\maps\florida-counties-reduced.png" />
+    <Content Include="sites\amplex\images\maps\us.jpg" />
+    <Content Include="sites\amplex\images\maps\us.png" />
+    <Content Include="sites\amplex\images\pov\bullet.png" />
+    <Content Include="sites\amplex\images\pov\pov-bullet.png" />
+    <Content Include="sites\amplex\images\pov\pov-generic-image.jpg" />
+    <Content Include="sites\amplex\images\pov\pov-generic-slide.jpg" />
+    <Content Include="sites\amplex\images\pov\pov-slide-border.png" />
+    <Content Include="sites\amplex\_css\maps\usMap.css" />
+    <Content Include="sites\amplex\_css\maps\floridaCountyMap.css" />
+    <Content Include="sites\amplex\_js\usMap.js" />
+    <Content Include="sites\amplex\_js\floridaCountyMap.js" />
+    <Content Include="sites\amplex\_js\jquery-1.7.2.min.js" />
+    <Content Include="sites\amplex\_js\jquery.maphilight.js" />
+    <Content Include="sites\amplex\_js\jquery.maphilight.min.js" />
+    <Content Include="sites\amplex\_masters\SubPageWide.Master" />
+    <Content Include="sites\amplex\files\maps\shipping-rates-by-county.csv" />
+    <Content Include="sites\amplex\files\maps\shipping-rates-by-us-region.csv" />
+    <None Include="test\map\shipping-rates-by-county.csv" />
+    <Content Include="sites\amplex\files\amplex-customer-registration-form.pdf" />
+    <Content Include="sites\amplex\images\arrow-left.jpg" />
+    <Content Include="sites\amplex\images\arrow-right.jpg" />
+    <Content Include="sites\amplex\images\Association\fngla.jpg" />
+    <Content Include="sites\amplex\images\Association\tbwg.png" />
+    <Content Include="sites\amplex\images\bg-cta.png" />
+    <Content Include="sites\amplex\images\bg-footer.jpg" />
+    <Content Include="sites\amplex\images\bg-form.jpg" />
+    <Content Include="sites\amplex\images\bg-shadow.jpg" />
+    <Content Include="sites\amplex\images\bg-subcontent.jpg" />
+    <Content Include="sites\amplex\images\bg-upper-2.jpg" />
+    <Content Include="sites\amplex\images\bg-upper.jpg" />
+    <Content Include="sites\amplex\images\btn-form-ov.jpg" />
+    <Content Include="sites\amplex\images\btn-form.jpg" />
+    <Content Include="sites\amplex\images\bullet-ov.jpg" />
+    <Content Include="sites\amplex\images\bullet.jpg" />
+    <Content Include="sites\amplex\images\about-ov.jpg" />
+    <Content Include="sites\amplex\images\about.jpg" />
+    <Content Include="sites\amplex\images\core\bg-search.jpg" />
+    <Content Include="sites\amplex\images\core\btn-search-ov.jpg" />
+    <Content Include="sites\amplex\images\core\btn-search.jpg" />
+    <Content Include="sites\amplex\images\core\get_adobe_reader.png" />
+    <Content Include="sites\amplex\images\core\nav-about-ov.jpg" />
+    <Content Include="sites\amplex\images\core\nav-about.jpg" />
+    <Content Include="sites\amplex\images\core\nav-background.jpg" />
+    <Content Include="sites\amplex\images\core\nav-contact-ov.jpg" />
+    <Content Include="sites\amplex\images\core\nav-contact.jpg" />
+    <Content Include="sites\amplex\images\core\nav-news-ov.jpg" />
+    <Content Include="sites\amplex\images\core\nav-news.jpg" />
+    <Content Include="sites\amplex\images\core\nav-products-ov.jpg" />
+    <Content Include="sites\amplex\images\core\nav-products.jpg" />
+    <Content Include="sites\amplex\images\core\nav-specials-ov.jpg" />
+    <Content Include="sites\amplex\images\core\nav-specials.jpg" />
+    <Content Include="sites\amplex\images\core\pdf-icon-transparent-background.png" />
+    <Content Include="sites\amplex\images\core\pdf.jpg" />
+    <Content Include="sites\amplex\images\core\pdf.png" />
+    <Content Include="sites\amplex\images\maps\florida-counties.png" />
+    <Content Include="sites\amplex\images\specials-ov.jpg" />
+    <Content Include="sites\amplex\images\specials.jpg" />
+    <Content Include="sites\amplex\images\products-ov.jpg" />
+    <Content Include="sites\amplex\images\products.jpg" />
+    <Content Include="sites\amplex\images\news-ov.jpg" />
+    <Content Include="sites\amplex\images\news.jpg" />
+    <Content Include="sites\amplex\images\contact-ov.jpg" />
+    <Content Include="sites\amplex\images\contact.jpg" />
+    <Content Include="sites\amplex\images\cta-becomecustomer-ov.jpg" />
+    <Content Include="sites\amplex\images\cta-becomecustomer.jpg" />
+    <Content Include="sites\amplex\images\cta-featuredproducts-ov.jpg" />
+    <Content Include="sites\amplex\images\cta-featuredproducts.jpg" />
+    <Content Include="sites\amplex\images\cta-whatisamplex-ov.jpg" />
+    <Content Include="sites\amplex\images\cta-whatisamplex.jpg" />
+    <Content Include="sites\amplex\images\featured-item.png" />
+    <Content Include="sites\amplex\images\ico-facebook-large.png" />
+    <Content Include="sites\amplex\images\ico-facebook.jpg" />
+    <Content Include="sites\amplex\images\ico-twitter-large.png" />
+    <Content Include="sites\amplex\images\ico-twitter.jpg" />
+    <Content Include="sites\amplex\images\ico-youtube-large.png" />
+    <Content Include="sites\amplex\images\ico-youtube.jpg" />
+    <Content Include="sites\amplex\images\img-contentfooter.jpg" />
+    <Content Include="sites\amplex\images\img-largeslidesample.jpg" />
+    <Content Include="sites\amplex\images\img-smallsample.jpg" />
+    <Content Include="sites\amplex\images\logo.jpg" />
+    <Content Include="sites\amplex\images\nav-1-ov.jpg" />
+    <Content Include="sites\amplex\images\nav-1.jpg" />
+    <Content Include="sites\amplex\images\nav-2-ov.jpg" />
+    <Content Include="sites\amplex\images\nav-2.jpg" />
+    <Content Include="sites\amplex\images\nav-3-ov.jpg" />
+    <Content Include="sites\amplex\images\nav-3.jpg" />
+    <Content Include="sites\amplex\images\nav-4-ov.jpg" />
+    <Content Include="sites\amplex\images\nav-4.jpg" />
+    <Content Include="sites\amplex\images\nav-5-ov.jpg" />
+    <Content Include="sites\amplex\images\nav-5.jpg" />
+    <Content Include="sites\amplex\images\nav-sprite-ov.jpg" />
+    <Content Include="sites\amplex\images\nav-sprite.jpg" />
+    <Content Include="sites\amplex\images\pov_button_five-ov.png" />
+    <Content Include="sites\amplex\images\pov_button_four-ov.png" />
+    <Content Include="sites\amplex\images\promo-ov.png" />
+    <Content Include="sites\amplex\images\promo.png" />
+    <Content Include="sites\amplex\images\rotate1.jpg" />
+    <Content Include="sites\amplex\images\rotate2.jpg" />
+    <Content Include="sites\amplex\images\rotate3.jpg" />
+    <Content Include="sites\amplex\images\rotate4.jpg" />
+    <Content Include="sites\amplex\_controls\footer.ascx" />
+    <Content Include="sites\amplex\_css\base.css" />
+    <Content Include="sites\amplex\_css\PIE.htc" />
+    <Content Include="sites\amplex\_css\pov.css" />
+    <Content Include="test\google-map\default.htm" />
+    <Content Include="test\map\florida-counties.png" />
+    <Content Include="test\map\jquery.maphilight.js" />
+    <Content Include="test\map\jquery.maphilight.min.js" />
+    <Content Include="test\map\map.html" />
+    <Content Include="test\map\shipping-rates-by-county.txt" />
+    <Content Include="test\usmap\map.html" />
+    <Content Include="test\usmap\us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="docs\discountasp.txt" />
+    <Content Include="docs\status.txt" />
+    <Content Include="docs\supermedia.txt" />
+    <Content Include="lib\FiftyOne.Foundation.dll" />
+    <Content Include="scms\admin\controls\PageModuleInstanceSelector.ascx" />
+    <Content Include="scms\modules\parts\classes\Parts.ashx" />
+    <Content Include="scms\modules\parts\catalog\edit.ascx" />
+    <Content Include="scms\modules\parts\catalog\view.ascx" />
+    <Content Include="scms\modules\parts\part\edit.ascx" />
+    <Content Include="scms\modules\parts\part\view.ascx" />
+    <Content Include="scms\modules\parts\settings.ascx" />
+    <Content Include="scms\modules\rss\feeds\feeds.ascx" />
+    <Content Include="scms\modules\rss\rssList\edit.ascx" />
+    <Content Include="scms\modules\rss\rssList\view.ascx" />
+    <Content Include="scms\modules\rss\settings.ascx" />
+    <Content Include="scms\modules\ticker\settings.ascx" />
+    <Content Include="sites\amplex\images\content\USDA_PHZM_2012_650x500.jpg" />
+    <Content Include="sites\amplex\images\core\blank.gif" />
+    <Content Include="sites\amplex\images\core\ticker-dot.png" />
+    <Content Include="sites\amplex\images\core\ticker-left.png" />
+    <Content Include="sites\amplex\images\core\ticker-pipe.png" />
+    <Content Include="sites\amplex\images\core\ticker-right.png" />
+    <Content Include="sites\amplex\images\core\ticker.png" />
+    <Content Include="sites\amplex\images\cta-becomecustomer-small-ov.jpg" />
+    <Content Include="sites\amplex\images\cta-becomecustomer-small.jpg" />
+    <Content Include="sites\amplex\images\cta-becomevendor-ov.jpg" />
+    <Content Include="sites\amplex\images\cta-becomevendor-small-ov.jpg" />
+    <Content Include="sites\amplex\images\cta-becomevendor-small.jpg" />
+    <Content Include="sites\amplex\images\cta-becomevendor.jpg" />
+    <Content Include="sites\amplex\images\cta-featuredproducts-small-ov.jpg" />
+    <Content Include="sites\amplex\images\cta-featuredproducts-small.jpg" />
+    <Content Include="sites\amplex\images\cta-whatisamplex-small-ov.jpg" />
+    <Content Include="sites\amplex\images\cta-whatisamplex-small.jpg" />
+    <Content Include="sites\amplex\images\pov\amplex-advantage.jpg" />
+    <Content Include="sites\amplex\images\pov\customer-service.jpg" />
+    <Content Include="sites\amplex\images\pov\delivery.jpg" />
+    <Content Include="sites\amplex\images\pov\learn-more-active.png" />
+    <Content Include="sites\amplex\images\pov\learn-more.png" />
+    <Content Include="sites\amplex\images\pov\pager-button-active.png" />
+    <Content Include="sites\amplex\images\pov\pager-button.png" />
+    <Content Include="sites\amplex\images\pov\quality-counts.jpg" />
+    <Content Include="sites\amplex\images\pov\slide-overlay.png" />
+    <Content Include="sites\amplex\images\pov\variety-and-selection.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-amy-mcknight-300x200.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-barbara-nouget.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-clearwater-crew-600x400.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-dawn-linkletter-200x300.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-george-kostilnik-2-200x300.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-george-kostilnik-jr-200x300.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-george-kostilnik-oregon-trade-show.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-george-kostilnik_300x200.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-greg-swisher-300x200.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-jose-luis-rodriguez-200x300.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-kim-johnson-200x300.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-manny-maestre-200x300.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-manueal-patino-200x300.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-michelle-tidwell-200x300.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-plant-city-crew-600x400.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-salesmen-group-shot-600x400.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-steve-mckight-2-200x300.jpg" />
+    <Content Include="sites\amplex\images\staff\amplex-steve-mckight-200x300.jpg" />
+    <Content Include="scms\modules\ticker\controls\ticker.ascx" />
+    <Content Include="sites\amplex\_controls\globalScript.ascx" />
+    <Content Include="sites\amplex\_css\request-a-quote.css" />
+    <Content Include="scms\modules\ticker\js\jquery.ticker.js" />
+    <Content Include="sites\amplex\_js\jquery-1.8.2.min.js" />
+    <None Include="scms\modules\parts\classes\parts.dbml.layout">
+      <DependentUpon>parts.dbml</DependentUpon>
+    </None>
+    <None Include="scms\modules\ticker\classes\ticker.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>ticker.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="setup\upgrades\1.0.22\10- scms_fn_CommaSeparatedStringToTable.sql" />
+    <None Include="setup\upgrades\1.0.22\5-scms_search_searchWord.sql" />
+    <None Include="setup\upgrades\1.0.22\9 - scms_search_clear.sql" />
+    <None Include="setup\upgrades\1.0.23\5-scms_search_searchWord.sql" />
+    <None Include="setup\upgrades\1.0.23\updates.sql" />
+    <None Include="setup\upgrades\amplex\sample-data.sql" />
+    <None Include="setup\upgrades\1.0.22\updates.sql" />
+    <None Include="setup\upgrades\amplex\catalog.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\51Degrees.mobi-Lite-2012.10.03.dat" />
+    <Content Include="scms\client\images\action_references.png" />
+    <Content Include="scms\modules\parts\sizes.ascx" />
+    <Content Include="sites\amplex\images\logo2.jpg" />
+    <Content Include="sites\mobile\images\core\blank.gif" />
+    <Content Include="sites\mobile\images\core\blank.png" />
+    <Content Include="sites\mobile\images\core\cta-bg.jpg" />
+    <Content Include="sites\mobile\images\core\cta-call-active.jpg" />
+    <Content Include="sites\mobile\images\core\cta-call.jpg" />
+    <Content Include="sites\mobile\images\core\cta-contact-us-active.jpg" />
+    <Content Include="sites\mobile\images\core\cta-contact-us.jpg" />
+    <Content Include="sites\mobile\images\core\cta.jpg" />
+    <Content Include="sites\mobile\images\core\featured.png" />
+    <Content Include="sites\mobile\images\core\footer-bg.jpg" />
+    <Content Include="sites\mobile\images\core\footer-bg2.jpg" />
+    <Content Include="sites\mobile\images\core\footer-locations-bottom.jpg" />
+    <Content Include="sites\mobile\images\core\footer-locations-top.jpg" />
+    <Content Include="sites\mobile\images\core\header-bg.jpg" />
+    <Content Include="sites\mobile\images\core\header.jpg" />
+    <Content Include="sites\mobile\images\core\header2.jpg" />
+    <Content Include="sites\mobile\images\core\images\cta-call-active.jpg" />
+    <Content Include="sites\mobile\images\core\images\images\footer-locations-bottom.jpg" />
+    <Content Include="sites\mobile\images\core\images\images\footer-locations-top.jpg" />
+    <Content Include="sites\mobile\images\core\next-ov.png" />
+    <Content Include="sites\mobile\images\core\next.png" />
+    <Content Include="sites\mobile\images\core\prev-ov.png" />
+    <Content Include="sites\mobile\images\core\prev.png" />
+    <Content Include="sites\mobile\_controls\footer.ascx" />
+    <Content Include="sites\mobile\_controls\header.ascx" />
+    <Content Include="sites\mobile\_css\jquery.mobile.structure-1.2.0.min.css" />
+    <Content Include="sites\mobile\_css\styles.css" />
+    <Content Include="sites\mobile\_css\xstyles.css" />
+    <Content Include="sites\mobile\_js\jquery-1.8.2.min.js" />
+    <Content Include="sites\mobile\_js\jquery-1.9.1.min.js" />
+    <Content Include="sites\mobile\_js\jquery.cycle2.min.js" />
+    <Content Include="sites\mobile\_js\jquery.mobile-1.2.0.min.js" />
+    <Content Include="sites\mobile\_js\jquery.mobile-1.3.0.min.js" />
+    <Content Include="sites\mobile\_js\swipe.js" />
+    <Content Include="sites\mobile\_themes\amplex\amplex.css" />
+    <Content Include="sites\mobile\_themes\amplex\amplex.min.css" />
+    <Content Include="sites\mobile\_themes\amplex\images\ajax-loader.gif" />
+    <Content Include="sites\mobile\_themes\amplex\images\icons-18-black.png" />
+    <Content Include="sites\mobile\_themes\amplex\images\icons-18-white.png" />
+    <Content Include="sites\mobile\_themes\amplex\images\icons-36-black.png" />
+    <Content Include="sites\mobile\_themes\amplex\images\icons-36-white.png" />
+    <Content Include="sites\mobile\_themes\amplex\theme.txt" />
+    <Content Include="sites\mobile\_themes\images\ajax-loader.gif" />
+    <Content Include="sites\mobile\_themes\images\icons-18-black.png" />
+    <Content Include="sites\mobile\_themes\images\icons-18-white.png" />
+    <Content Include="sites\mobile\_themes\images\icons-36-black.png" />
+    <Content Include="sites\mobile\_themes\images\icons-36-white.png" />
+    <Content Include="sites\mobile\_themes\merlin.css" />
+    <Content Include="sites\mobile\_themes\merlin.min.css" />
+    <Content Include="App_Data\51Degrees.mobi-Lite-2013.04.10.dat" />
+    <None Include="scms\modules\ticker\classes\ticker.dbml.layout">
+      <DependentUpon>ticker.dbml</DependentUpon>
+    </None>
+    <None Include="setup\upgrades\1.0.26\form_notify_by_field.sql" />
+    <None Include="setup\upgrades\1.0.27\updates.sql" />
+    <None Include="setup\upgrades\1.0.28\updates.sql" />
+    <None Include="setup\upgrades\1.0.29\updates.sql" />
+    <None Include="setup\upgrades\1.0.30\8 - scms_pages_get.sql" />
+    <None Include="setup\upgrades\1.0.31\mobile.sql" />
+    <None Include="setup\upgrades\1.0.32\update.sql" />
+    <None Include="setup\upgrades\1.0.33\updates.sql" />
+    <None Include="setup\upgrades\1.0.35-next\updates.sql" />
+    <None Include="setup\upgrades\amplex\cat_part_search.sql" />
+    <None Include="setup\upgrades\amplex\cat_part_search2.sql" />
+    <None Include="setup\upgrades\amplex\1.1\cat_part_search.sql" />
+    <None Include="setup\upgrades\amplex\1.1\updates.sql" />
+    <None Include="setup\upgrades\amplex\mobile.sql" />
+    <None Include="setup\upgrades\amplex\ticker.sql" />
+    <None Include="setup\upgrades\amplex\ticker2.sql" />
+    <None Include="sites\mobile\_css\xstyles.css - Shortcut.lnk" />
+    <Content Include="sites\mobile\_masters\BasicMaster.Master" />
+    <Content Include="sites\mobile\_masters\SubpageMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="scms\modules\slideshow\pager\" />
+    <Folder Include="setup\upgrades\1.0.12\" />
+    <Folder Include="setup\upgrades\next\" />
+    <Folder Include="sites\amplex\forms\1\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55961</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://amplex.com</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://amplex.com</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,18 @@
+﻿C:\Windows\SysWOW64\odbcad32.exe
+http://kb.microfocus.com/display/4/kb/article.aspx?aid=33943
+Excel DSN Error - "DSN contains an architecture mismatch between the Driver and Application"
+
+-- also forced output to be in x86 32 bit after receiving an error
+{"ERROR [IM014] [Microsoft][ODBC Driver Manager] The specified DSN contains an architecture mismatch between the Driver and Application"}
+
+System DSN, SageTest
+
+http://support.microsoft.com/kb/310988
+How To Use the ODBC .NET Managed Provider in Visual C# .NET and Connection Strings
+
+http://www.microsoft.com/en-us/download/details.aspx?id=20715
+DOWNLOAD CENTER - ODBC .NET Data Provider
+
+
+// how to read the data
+http://support.microsoft.com/kb/257819

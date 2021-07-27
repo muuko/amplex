@@ -1,0 +1,9 @@
+C:\projects\amplex\amplex\bin\amplex.dll
+C:\projects\amplex\amplex\bin\amplex.pdb
+C:\projects\amplex\amplex\bin\AjaxControlToolkit.dll
+C:\projects\amplex\amplex\bin\Recaptcha.dll
+C:\projects\amplex\amplex\bin\scms.dll
+C:\projects\amplex\amplex\obj\Debug\amplex.dll
+C:\projects\amplex\amplex\obj\Debug\amplex.pdb
+C:\projects\amplex\amplex\bin\scms.pdb
+C:\projects\amplex\amplex\bin\FiftyOne.Foundation.dll

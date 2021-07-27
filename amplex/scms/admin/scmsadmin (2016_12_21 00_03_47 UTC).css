@@ -1,0 +1,347 @@
+﻿/* http://www.456bereastreet.com/lab/developing_with_web_standards/csslayout/2-col/ */
+body,html
+{
+	padding:0;
+	color:#000;
+	background:#a7a09a;
+	font-family:Verdana;
+	font-size:12px;
+	margin:0;
+}
+
+#wrap
+{
+	min-width:1024px;
+	min-height:800px;
+	margin:5px 5px;
+	background-color:#fff;
+}
+
+#leftColumn
+{
+	width: 150px;
+	display:inline;
+	float:left;
+	overflow:hidden;
+	background-color:#fff;
+}
+
+#mainColumn
+{
+	width:874px;
+	display:inline;
+	float:left;
+	overflow:hidden;
+	background-color:#fff;
+	padding-bottom:20px;
+}
+
+#title
+{
+	display:inline;
+	float:left;
+}
+
+#login
+{
+	display:inline;
+	float:right;
+	margin-top:10px;
+}
+
+.login-name
+{
+	font-weight:bold;
+}
+
+#footer
+{
+	clear:both;
+	background:#fff;
+}
+
+h1
+{
+	font-size:16px;
+	color: Navy;
+}
+
+h2
+{
+	font-size:14px;
+	color: Navy;
+}
+
+a
+{
+	text-decoration: none;
+	color: Navy;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: Navy;
+}
+
+ul
+{
+	list-style: none;
+	margin-left:5px;
+}
+
+li
+{
+	line-height:20px;
+}
+
+strong
+{
+	color: Navy;
+}
+
+
+
+
+.label
+{
+	color:Black;
+	font-weight:bold;
+}
+			
+.tabbed-menu 
+{
+	margin-right:5px;
+	margin-bottom:10px;
+}			
+			
+.tabbed-menu-hover 
+{ 
+	text-decoration: underline ! important; 
+}				
+
+.tabbed-menu-selected 
+{ 
+  font-weight: bold; 
+}
+
+/* plugin module instances */
+.pmiTable
+{
+	display:block;
+	margin-top:5px;
+}
+
+.pmiRow
+{
+	display:block;
+	clear:both;
+	margin-top:5px;
+	width:850px;
+}
+
+.pmiCell
+{
+	padding-right:4px;
+	display:inline;
+	float:left;
+	overflow:hidden;
+}
+
+.pmiCellHeader
+{
+	padding-right:4px;
+	display:inline;
+	float:left;
+	overflow:hidden;
+	font-weight:bold;
+}
+
+.pmiCellId
+{
+	width:50px;
+}
+
+.pmiCellName
+{
+	width:200px;
+}
+
+.pmiCellPlugin
+{
+	width:200px;
+}
+
+.pmiCellPlaceHolder
+{
+	width:150px;
+}
+
+.pmicellOwner
+{
+	width:50px;
+}
+
+.pmiCellTemplateOverride
+{
+	width:100px;
+}
+
+.pmiCellAction
+{
+	text-align:center;
+	width:100px;
+}
+
+/* page list */
+.pageTable
+{
+	display:block;
+	margin-top:5px;
+}
+
+.pageRow
+{
+	display:block;
+	clear:both;
+	padding: 8px 0 2px 0;
+	
+	overflow: hidden;
+}
+
+.pageTable .pageRow
+{
+	border-bottom: solid 1px #888;
+}
+
+.pageTable .pageRow:nth-child(even)
+{
+	background-color: #f0f0f0;
+}
+
+
+.pageLabel
+{
+	color:gray;
+	width: 150px;
+	font-weight:bold;
+	display:inline;
+	float:left;
+	padding-top:4px;
+}
+
+.pageValue
+{
+	display:inline;
+	float:left;
+}
+
+.pagePanel
+{
+	
+	background-color:#eef;
+	margin-bottom:10px;
+}
+
+
+.pagePanel fieldset
+{
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.pagePanel fieldset legend
+{
+	font-weight:bolder;
+	color:Navy;
+}
+.pageCell
+{
+	padding-right:10px;
+	display:inline;
+	float:left;
+	overflow:hidden;
+}
+
+.pageCellHeader
+{
+	padding-right:10px;
+	display:inline;
+	float:left;
+	overflow:hidden;
+	font-weight:bold;
+}
+
+.pageCellId
+{
+	width:50px;
+}
+
+.pageCellLinkText
+{
+	width:550px;
+	margin-right:10px;
+	white-space:nowrap;
+}
+
+.pageCellType
+{
+	width:100px;
+}
+
+.pageCellVisible
+{
+	width:50px;
+	text-align:center;
+}
+
+.pageCellAction
+{
+	width:120px;
+	text-align:center;
+}
+
+
+
+
+div.subnav a.active
+{
+	font-weight:bold;
+}
+
+div.button-bar
+{
+	margin-top:20px;
+}
+
+.button-bar a
+{
+	margin-right:10px;
+}
+
+
+div.status-message-success
+{
+	font-weight:bold;
+	color:Green;
+}
+
+div.status-message-failure
+{
+	font-weight:bold;
+	color:Red;
+}
+
+
+li.plugin-application
+{
+	margin-bottom:10px;
+}
+.admin-settings label
+{
+	font-weight:bold;
+}
+.admin-settings .value
+{
+	padding-left:10px;
+}

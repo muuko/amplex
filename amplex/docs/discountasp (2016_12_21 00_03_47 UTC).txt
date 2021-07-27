@@ -1,0 +1,110 @@
+﻿http://amplexda.dev.coinbug.com/test.html
+
+user: amplexdadev
+password: discountasp99
+
+
+amplexda.dev.coinbug.com
+jwoodlock@yahoo.com
+discountasp99
+registered 6/26/2012
+user name: amplexdadev
+ftp user name: 0124819|amplexdadev
+---
+
+sql server
+sql2k803.discountasp.net
+user: SQL2008_884966_scms_user
+password: discountasp99
+
+--
+ 96.31.33.37
+Alt URL:	http://amplexdadev.web713.discountasp.net
+Alt FTP:	ftp.amplexdadev.web713.discountasp.net
+NOTE: This information is always available in the Account Information section of the Control Panel.
+--
+
+
+Thank you for choosing DiscountASP.NET. Your hosting account is being setup and you will be receiving an email shortly. We truly appreciate your business.
+
+NOTE: We have sent you a Welcome Email with important account information. If you do not receive the Welcome Email and you are using spam filters, please check in your SPAM/Junk/Bulk folders. Please add DiscountASP.NET to your email whitelist if possible.
+
+You may also want to check out the following resources:
+- NEW Learn about Team Foundation Server Hosting
+
+- Check out our Knowledge Base
+- Register in our Community Forum
+- Check out innovations at labs.discountasp.net
+- Bookmark our company blog: blog.discountasp.net
+- Become a fan on Facebook
+- Circle us on GooglePlus
+- Follow us on Twitter: twitter.com/discountasp
+    - Tweet About Signing Up with DiscountASP.NET!
+
+Accounts Using Existing Domains
+If you are using an existing domain name, then please update your Domain Name Servers with our Domain Name Server information below.
+Domain Name Servers
+ns1.discountasp.net
+ns2.discountasp.net
+ns3.discountasp.net
+
+ 
+  	Invoice #: amplexdadev-0001
+Invoice Date: 6/26/2012
+	Bill To:
+Jery Woodlock
+
+9804 Bennington Drive
+Tampa, FL 33626
+United States
+Account Information
+Domain Name 	amplexda.dev.coinbug.com
+User Name 	amplexdadev
+Billing Period 	Annual
+
+
+ Quantity  	 Item 	Total 
+ 1 	DiscountASP.NET Hosting Plan 	$120.00
+ 1 	Setup Fee 	$25.00
+ 1 	Setup Fee Waived 	-$25.00
+ 1 	6 Months Free (50% off) 	-$60.00
+ Total: 	$60.00
+
+
+------------
+Print Account Overview
+
+Domain Name: amplexda.dev.coinbug.com
+Customer ID: 124819
+
+Control Panel Login: amplexdadev
+FTP Username: 0124819|amplexdadev
+Password: discountasp99
+
+WebMail: http://webmail.amplexda.dev.coinbug.com
+
+Alternative URL/FTP:
+  Alt URL: http://amplexdadev.web713.discountasp.net
+  Alt FTP: ftp.amplexdadev.web713.discountasp.net
+
+Admin Contact Info:
+  Admin Name: Jery Woodlock
+  Admin Email Address: jwoodlock@yahoo.com
+  Alternate Email Address: jwoodlock@gmail.com
+
+Helpful Links:
+  Control Panel: http://my.discountasp.net
+  Support Portal: https://support.discountasp.net
+  Knowledge Base: https://support.discountasp.net
+  Community Forum: http://community.discountasp.net
+
+Social Media:
+  DiscountASP.NET Blog: http://blog.discountasp.net
+  DiscountASP.NET on Twitter: http://twitter.discountasp.net
+  DiscountASP.NET on Facebook: http://facebook.discountasp.net
+  DiscountASP.NET on GooglePlus: http://googleplus.discountasp.net
+
+Deals:
+  Special Deals: http://www.discountasp.net/specialdeals.aspx
+  Affiliate Program: http://www.discountasp.net/affiliate.aspx
+

@@ -1,0 +1,9 @@
+﻿added https
+
+/scms/admin/Admin.Master.cs
+/scms/admin/Settings.aspx
+/scms/admin/controls/PageSettings.ascx
+/scms/modules/security/settings.ascx
+
+
+updated dll

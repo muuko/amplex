@@ -1,0 +1,173 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="view.ascx.cs" Inherits="scms.modules.parts.catalog.view" %>
+<%@ Register Src="~/scms/admin/controls/SelectImage.ascx" TagPrefix="uc" TagName="selectImage" %>
+<style type="text/css">
+
+	#catalog-search
+	{
+		margin-top:20px;
+		position:relative;
+	}
+	
+	#catalog-search-for
+	{
+		width:650px;
+	}
+	
+	#catalog-search-for-label
+	{
+		padding-top:2px;
+		display:block;
+		width:96px;
+		text-align:right;
+	}
+	
+	#catalog-search-for-value
+	{
+		position:absolute;
+		top:0;
+		left:100px;
+	}
+	
+	#catalog-search-in
+	{
+		width:650px;
+	}
+	#catalog-search-in-label
+	{
+		position:absolute;
+		top:34px;
+		width:96px;
+		text-align:right;
+	}
+	#catalog-search-in-value
+	{
+		position:absolute;
+		top:33px;
+		left:100px;
+	}
+	
+	#catalog-search-by-alpha-label
+	{
+		position:absolute;
+		top:70px;
+		width:96px;
+		text-align:right;
+	}
+	
+
+	.catalog-search-button
+	{
+		position:absolute;
+		left: 440px;
+		height:40px;
+		top: -2px;
+		background-color: #ecffb2;
+		color: #7ba600;
+		
+	}
+	
+	#catalog-search-results
+	{
+		margin-top:90px;
+	}
+	
+	.catalog-select-alphabet
+	{
+		position:absolute;
+		top:70px;
+		left:100px;
+	}
+	
+	.catalog-select-alphabet a
+	{
+		display:block;
+		float:left;
+		width:16px;
+		text-align:center;
+	}
+	
+	.catalog-select-alphabet a:link, .catalog-select-alphabet a:visited
+	{
+		text-decoration:none;
+		font-weight:normal;
+	}
+	
+	.catalog-select-alphabet a:hover, .catalog-select-alphabet a:active, .catalog-select-alphabet a.active
+	{
+		text-decoration:underline;
+		font-weight:bold;
+	}
+	
+	#catalog-search-results-body
+	{
+		height:200px;
+	}
+	
+	.catalog-search-results-table
+	{
+		width: 100%;
+		border: solid 1px #798c22;
+	}
+	
+</style>
+
+
+<div id="catalog-search">
+	<strong id="catalog-search-for-label">Search for:  </strong>
+	<div id="catalog-search-for-value">
+		<asp:TextBox ID="txtSearch" runat="server" Width="300"></asp:TextBox><br />
+	</div>
+	<strong id="catalog-search-in-label">in:</strong>
+	<div id="catalog-search-in-value">
+		<asp:CheckBox ID="checkCommonName" runat="server" Text="Common Name" />
+		<asp:CheckBox ID="checkBotanicalName" runat="server" Text="Botanical Name" />
+		<asp:CheckBox ID="checkDescription" runat="server" Text="Description" />
+	</div>
+	<input type="button" class="catalog-search-button" id="btnSearch" runat="server" value="Search Plant Catalog" onserverclick="btnSearch_Click" />
+	<strong id="catalog-search-by-alpha-label">or Select Letter:</strong>
+	<div class="catalog-select-alphabet" id="divCatalogSelectAlphabet" runat="server">
+			<a href="?sl=A">A</a>
+			<a href="?sl=B">B</a>
+			<a href="?sl=A" class="active">C</a>
+			<a href="?sl=B">D</a>
+			<a href="?sl=A">E</a>
+			<a href="?sl=B">F</a>
+		</div>
+	<div id="catalog-search-results">
+		
+		<div id="catalog-search-results-body">
+			<asp:PlaceHolder ID="placeholderTableResults" runat="server">
+			<table class="catalog-search-results-table">
+				<tr>
+					<th></th>
+					<th>Common Name</th>
+					<th>Botanical Name</th>
+					<th>Price</th>
+				</tr>
+				
+				<asp:ListView 
+					ID="lvResuls" 
+					runat="server"
+				>
+					<LayoutTemplate><asp:PlaceHolder ID="itemPlaceholderId" runat="server"></asp:PlaceHolder></LayoutTemplate>
+					<ItemTemplate>
+						<tr id="trCatPart" runat="server">
+							<td><img id="imgThumbnail" src="" runat="server" /></td>
+							<td><span><%# Eval("Description1") %></span></td>
+							<td><span><%# Eval("Description2") %></span></td>
+							<td><span id="spanPrice" runat="server"></span></td>
+						</tr>
+					</ItemTemplate>
+				</asp:ListView>
+				
+			</table>
+			</asp:PlaceHolder>
+		
+		</div>
+		<div id="catalog-search-results-pager">
+		</div>
+	
+		<asp:CheckBox ID="checkShowImages" runat="server" Text="Show Images" />
+	</div>
+	
+</div>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<ICParts>
+		<ICPart SKICPart="1" ID="ONE" Hash="73829342">
+			<Description1>Description 1</Description1>
+			<Description2>Description 2</Description2>
+			<Description3>Description 3</Description3>
+			<LongDescription>This is the long description</LongDescription>
+		</ICPart>
+		<ICPart SKICPart="2" ID="TWO" Hash="243">
+			<Description1>Updated description one</Description1>
+			<Description2>Description 2</Description2>
+			<Description3>Description 3</Description3>
+			<LongDescription>This is the long description for two</LongDescription>
+		</ICPart>
+		<ICPart SKICPart="3" ID="THREE" Hash="1024">
+			<Description1>Description 1</Description1>
+			<Description2>Description 2</Description2>
+			<Description3>Description 3</Description3>
+			<LongDescription>This is the long description for three</LongDescription>
+		</ICPart>
+		<ICPart SKICPart="4" ID="FOUR" Hash="839">
+			<Description1>Description 1</Description1>
+			<Description2>Description 2</Description2>
+			<Description3>Description 3</Description3>
+			<LongDescription>This is the long description for four</LongDescription>
+		</ICPart>
+	</ICParts>
+</root>

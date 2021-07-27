@@ -1,0 +1,15 @@
+mobile items remaining
+
+PRE PRODUCTION
+- add paging to featured items
+- add admin for using mobile phone to add new users
+- add admin for using mobile phone to add featured item
+- add catalog search / view items
+- add freight
+
+
+PRODUCTION
+- get additional hosting config
+- upgrade
+- dns changes to support m.aboutabmplex.com
+- add mobile link to footer of full website
